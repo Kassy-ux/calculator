@@ -2,69 +2,77 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     background-image: url('./liana-mikah-qNhe2QXzLuo-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
     display: flex;
-}
-
-.calculator {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .calculator {
     background-color: azure;
-    border: 49px solid #ffb6c1;
+    border: 8px solid #ffb6c1;
     border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-#display {
+    padding: 1rem;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #display {
     background: #fff;
     border-radius: 10px;
     text-align: right;
-    padding: 20px;
+    padding: 1rem;
     font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.buttons {
+    min-height: 60px;
+    word-wrap: break-word;
+  }
+  
+  .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-.btn {
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    padding: 1rem;
     font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
     background: #ffc0cb;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ffa5b5;
-}
-
-.operator {
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #ff99aa;
+  }
+  
+  .operator {
     background: #ff69b4;
     color: white;
-}
-
-.equal {
+  }
+  
+  .equal {
     background: #ff1493;
     color: white;
-    grid-column: span 4;
-}
-
-.clear {
+    grid-column: span 2;
+  }
+  
+  .clear {
     background: #ffcccb;
-    grid-column: span 4;
-}
+    grid-column: span 2;
+  }
+  
